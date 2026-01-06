@@ -406,7 +406,7 @@ public class Bot extends TelegramLongPollingBot {
             type = null;
             getMessageState.setChoiceVersion(false);
             getMessageState.setShortDescription(true);
-            editMessageText.setText("📝 Введите краткое описание клиента:");
+            editMessageText.setText("📝 Введите краткое описание клиента.\nНапример: хочет 2-к квартиру в центре Сочи, евро ремонт, вид на горы и т.д.");
             editMessageText.setReplyMarkup(null);
             tryCatch(editMessageText);
         }
